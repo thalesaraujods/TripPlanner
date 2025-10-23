@@ -1,8 +1,10 @@
 import FoundationModels
 import Observation
+import SwiftUI
+internal import Combine
 
-final class ItineraryPlannerService {
-    private(set) var itinerary: Itinerary.PartiallyGenerated?
+final class ItineraryPlannerService: ObservableObject {
+    @Published private(set) var itinerary: Itinerary.PartiallyGenerated?
     private var session: LanguageModelSession
     
     var error: Error?
