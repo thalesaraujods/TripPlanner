@@ -1,0 +1,1 @@
+POC para entendimento do framework de AI FoundationModels da Apple.
